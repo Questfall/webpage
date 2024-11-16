@@ -1,4 +1,4 @@
-import {images} from './assets.imba'
+import {images, ArrowIcon} from './assets.imba'
 import {MainButton} from './components/buttons.imba'
 
 export tag Section01 < section
@@ -23,12 +23,12 @@ export tag Section01 < section
 		<div> "Existing quest platforms lack security and fair tokenomics. We're fixing that, building a future where quests are a core part of online experiences."
 			css fs:0.5rem lh:0.8rem
 		<div>
-			css d:hflex ai:center jc:center
-			<MainButton [w:5rem] caption="Whitepaper" link='https://docs.questfall.xyz'>
+			css d:hflex ai:center jc:center mt:1.5rem
+			<MainButton [w:5rem] caption="Whitepaper" link='https://docs.questfall.xyz' icon=ArrowIcon>
 			# <MainButton [w:4rem mr:1rem] caption="Invest">
 			# <MainButton [w:4rem] caption="Earn">
 		<div>
-			css mt:1.2rem pos:relative o:0 animation: 0.5s fadein forwards
+			css mt:1.5rem pos:relative o:0 animation: 0.5s fadein forwards
 			<div>
 				css pos:absolute bgc:#017598 bxs:0 0 10vw #017598 rd:50% w:100% aspect-ratio:1.34 m:0 o:0 animation: 1s fadein forwards
 			<img src=images.sceenshot.url loading="lazy" decoding="asynchronous" width="{images.sceenshot.width}" height="{images.sceenshot.height}">

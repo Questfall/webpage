@@ -1,5 +1,6 @@
 export tag MainButton
 	caption = 'Click me'
+	link = '/'
 	
 	css
 		&
@@ -30,4 +31,4 @@ export tag MainButton
 					bd: 1px solid $back_active
 		
 	<self>
-		<div> caption
+		<div @click=(window.open(link))> caption

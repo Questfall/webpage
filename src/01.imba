@@ -24,7 +24,7 @@ export tag Section01 < section
 			css fs:0.5rem lh:0.8rem
 		<div>
 			css d:hflex ai:center jc:center
-			<MainButton [w:5rem] caption="Whitepaper">
+			<MainButton [w:5rem] caption="Whitepaper" link='https://docs.questfall.xyz'>
 			# <MainButton [w:4rem mr:1rem] caption="Invest">
 			# <MainButton [w:4rem] caption="Earn">
 		<div>

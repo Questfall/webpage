@@ -28,9 +28,9 @@ const headers = ['Quest Platform', 'Tokenomics', 'Bot Protection', 'Entertainmen
 export tag Hero < section
 	css
 		.socials
-			d:hflex ai:center max-width:900px gap:80px jc:space-between mt:80px # pos:absolute
+			d:hflex ai:center max-width:900px gap:80px jc:space-between t:80px pos:absolute
 			.link 
-				c:#30A5FF d:hflex ai:center fw:500 fs:0.8rem cursor:pointer
+				c:#30A5FF d:hflex ai:center fw:500 fs:1rem cursor:pointer
 				img	
 					mr:0.3em
 				span 
@@ -46,8 +46,8 @@ export tag Hero < section
 			css pos:absolute h:100% w:100% zi:-1
 				bg:radial-gradient(circle at 50% 0%, #003069 -20%, #000D1B 80%) bgs:cover
 		<div.vcontent>
-			<div> "version 0.0.1"
-				css fw:500 fs:12px c:gray4
+			<div> "version 0.0.2"
+				css fw:500 fs:12px c:blue4 t:10px pos:absolute
 			<.socials>
 				<div.link>
 					<Image file=files.twitter>
@@ -59,13 +59,15 @@ export tag Hero < section
 					<Image file=files.whitepaper>
 					<span> "Whitepaper"
 			<.header>
-				<span> "The innovative"
-					css fs:1.5rem
-				<br>
+				# <div>
+				# 	css fs:1.5rem ta:center
+				# 	<span> "Innovative"
 				<TextSlider strings=headers>
-					css fs:5rem lh:1em ta:center
-				<br>
-				<span> 'of the future'
-					css float:right fs:1.5rem mt:-1.5rem
+					css fs:6rem lh:1em ta:center
+				<div>
+					css bgc:#84084F fw:600 rd:7px ta:center w:fit-content px:1em py:0.2em fs:18px mx:auto mt:3em
+					<span> "Comming soon"
+				# <span> 'of the future'
+				# 	css float:right fs:1.5rem mt:-1.5rem
 
 			

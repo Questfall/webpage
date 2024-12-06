@@ -3,22 +3,22 @@ import {TextSlider} from '../components/texts.imba'
 
 const files = 
 	questfall: 
-		path: 'images/questfall.avif'
+		path: 'images/questfall.svg'
 		w: 162
 		h: 42
 		alt: 'Questfall'
 	twitter: 
-		path: 'images/twitter.avif'
+		path: 'images/twitter.svg'
 		w: 15
 		h: 16
 		alt: 'Twitter'
 	discord: 
-		path: 'images/discord.avif'
+		path: 'images/discord.svg'
 		w: 22
 		h: 18
 		alt: 'Discord'
 	whitepaper: 
-		path: 'images/whitepaper.avif'
+		path: 'images/whitepaper.svg'
 		w: 15
 		h: 15
 		alt: 'Whitepaper'
@@ -33,8 +33,6 @@ export tag Hero < section
 				c:#30A5FF d:hflex ai:center fw:500 fs:1rem cursor:pointer
 				img	
 					mr:0.3em
-				span 
-					pt:0.1rem
 		.header
 			my:auto of:visible min-width:560px
 	<self>
@@ -44,9 +42,9 @@ export tag Hero < section
 			<Image file=files.questfall>
 		<div>
 			css pos:absolute h:100% w:100% zi:-1
-				bg:radial-gradient(circle at 50% 0%, #003069 -20%, #000D1B 80%) bgs:cover
+				bg:radial-gradient(circle at 50% 0%, #003069 -20%, #000D1B 70%) bgs:cover
 		<div.vcontent>
-			<div> "version 0.0.2"
+			<div> "version 0.0.3"
 				css fw:500 fs:12px c:blue4 t:10px pos:absolute
 			<.socials>
 				<div.link>

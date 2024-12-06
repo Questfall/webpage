@@ -23,7 +23,7 @@ const files =
 		h: 15
 		alt: 'Whitepaper'
 
-const headers = ['Quest Platform', 'Tokenomics', 'Bot Protection', 'Entertainment']
+const headers = ['Tokenomics', 'Bot Protection', 'Mining', 'Deflation', 'Fun', 'Decentralization']
 
 export tag Hero < section
 	css
@@ -40,12 +40,12 @@ export tag Hero < section
 		<div.block>
 			css h:74px bdb:#002A65 bgc:#000D1B zi:1
 			<Image file=files.questfall>
+			<div> "version 0.0.4"
+				css fw:500 fs:12px c:gray6 t:24px pos:absolute r:20px
 		<div>
 			css pos:absolute h:100% w:100% zi:-1
-				bg:radial-gradient(circle at 50% 0%, #003069 -20%, #000D1B 70%) bgs:cover
+				bg:radial-gradient(circle at 50% 0%, #003069 0%, #000D1B 50%) bgs:1400px 1000px bgr:no-repeat bgp:center top
 		<div.vcontent>
-			<div> "version 0.0.3"
-				css fw:500 fs:12px c:blue4 t:10px pos:absolute
 			<.socials>
 				<div.link>
 					<Image file=files.twitter>
@@ -59,12 +59,15 @@ export tag Hero < section
 			<.header>
 				# <div>
 				# 	css fs:1.5rem ta:center
-				# 	<span> "Innovative"
+				# 	<span> "Quest Platform"
+				<div>
+					css fs:1.5rem ta:center mb:1em
+					<span> "Quests Reimagined"
 				<TextSlider strings=headers>
 					css fs:6rem lh:1em ta:center
 				<div>
 					css bgc:#84084F fw:600 rd:7px ta:center w:fit-content px:1em py:0.2em fs:18px mx:auto mt:3em
-					<span> "Comming soon"
+					<span> "Coming soon"
 				# <span> 'of the future'
 				# 	css float:right fs:1.5rem mt:-1.5rem
 

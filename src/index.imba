@@ -8,11 +8,14 @@ import './global.imba'
 # import {Footer} from './blocks/footer.imba'
 
 import {Hero} from './blocks/01.hero.imba'
+import {Screen} from './blocks/02.screen.imba'
+import {Crypto} from './blocks/03.crypto.imba'
 
 tag App < article
 	<self.app>
 		<Hero.block>
-		
+		<Screen.block>
+		<Crypto.block>
 		# <Header>
 		# <Hero>
 		# <Screen>

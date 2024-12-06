@@ -26,20 +26,20 @@ export tag TextSlider
 				0%
 					transform: translateY(-50px)
 					opacity: 0
-					clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%)
+					clip-path: polygon(100% 0, 100% 0, 0 110%, 0 110%)
 				100%
 					transform: translateY(0)
 					opacity: 1
-					clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%)
+					clip-path: polygon(100% 0, 100% 110%, 0 110%, 0 0)
 			hide
 				0%
 					transform: translateY(0)
 					opacity: 1
-					clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%)
+					clip-path: polygon(100% 0, 100% 110%, 0 110%, 0 0)
 				100%
 					transform: translateY(50px)
 					opacity: 0
-					clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%)
+					clip-path: polygon(100% 0, 100% 0, 0 110%, 0 110%)
 				
 	<self>
 		<p$header>

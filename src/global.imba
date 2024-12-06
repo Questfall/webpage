@@ -2,14 +2,19 @@
 # window.addEventListener('resize', onresize)
 # onresize!
 
+window.addEventListener 'scroll', do 
+	document.body.style.setProperty('--scroll', "{document.documentElement.scrollTop}px")
 
 global css
+	@root
+		$scroll: 0
 	html
 		overflow-x:hidden
 		ff:"Gilroy", sans-serif
 		fw: 600
 		c:white
 		bgc:#000D1B
+		scroll-behavior: smooth
 	# body
 	# 	d:vflex jc:center ai:center
 	# .app

@@ -4,17 +4,16 @@ import {MainButton} from './components/buttons.imba'
 export tag Section01 < section
 	<self>
 		css	
+			&
+				ml:10% mr:10% 
 			div
 				mt:1rem
-				@keyframes fadein
-					100% o:1
-			.topnav
+		<div>
+			css 
 				d:hflex ai:center jc:center
 				bgc:#010D19 h:2rem w:100% p:0 m:0 bdl:0 bdr:0 bdb:0 bdb:1px bs:solid
 				border-image: linear-gradient(to left, transparent, #1E345A, transparent) 1
-			.menu
-				fs:0.4rem c:gray4 mt:0
-		<div.topnav>
+			
 			<img src=images.logo.url width="{images.logo.width}" height="{images.logo.height}">
 			# <div.menu [ml:auto]> "Documentation"
 

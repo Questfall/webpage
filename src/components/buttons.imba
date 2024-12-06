@@ -1,4 +1,4 @@
-export tag MainButton
+export tag ButtonMain
 	caption = 'Click me'
 	link = '/'
 	icon
@@ -17,7 +17,7 @@ export tag MainButton
 			pb: 8px
 			pt: 10px
 			rd: 4px
-			fs: 0.5rem fw: 600
+			fs: 1.4rem fw: 600
 			w: 100%
 			ta: center
 			c: $font_passive
@@ -34,4 +34,4 @@ export tag MainButton
 		css d:hflex ai:center jc:center
 		<div @click=(window.open(link))> caption
 		if icon
-			<{icon} [w:0.4rem ml:0.2rem mt:0.1rem]>
+			<{icon} [w:1rem ml:0.5rem mt:0.1rem]>

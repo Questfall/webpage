@@ -1,13 +1,20 @@
 export const images = 
 	sceenshot:
-		# url: './assets/questfall_main.avif'
-		url: './assets/questfall_main_posterized.avif'
+		url: './assets/questfall_main.avif'
 		width: 1280
 		height: 973
 	logo:
 		url: './assets/questfall_logo.png'
 		width: 125
 		height: 36
+	dummiesf:
+		url: 'url(./assets/dummies_front.avif)'
+		width: 510
+		height: 629
+	dummiesb:
+		url: 'url(./assets/dummies_back.avif)'
+		width: 510
+		height: 629
 
 # export const svgs =
 # arrow: Arrow

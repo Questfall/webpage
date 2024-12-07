@@ -2,8 +2,8 @@
 # window.addEventListener('resize', onresize)
 # onresize!
 
-window.addEventListener 'scroll', do 
-	document.body.style.setProperty('--scroll', "{document.documentElement.scrollTop}px")
+# window.addEventListener 'scroll', do 
+#	document.body.style.setProperty('--scroll', "{document.documentElement.scrollTop}px")
 
 global css
 	@root

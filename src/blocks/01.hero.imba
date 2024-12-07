@@ -40,7 +40,7 @@ export tag Hero < section
 		<div.block>
 			css h:74px bdb:#002A65 bgc:#000D1B zi:1
 			<Image file=files.questfall>
-			<div> "version 0.0.4"
+			<div> "version 0.0.5"
 				css fw:500 fs:12px c:gray6 t:24px pos:absolute r:20px
 		<div>
 			css pos:absolute h:100% w:100% zi:-1
@@ -61,7 +61,7 @@ export tag Hero < section
 				# 	css fs:1.5rem ta:center
 				# 	<span> "Quest Platform"
 				<div>
-					css fs:1.5rem ta:center mb:1em
+					css fs:1.5rem ta:center mb:1em ls:0.2em
 					<span> "Quests Reimagined"
 				<TextSlider strings=headers>
 					css fs:6rem lh:1em ta:center

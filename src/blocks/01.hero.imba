@@ -40,20 +40,20 @@ export tag Hero < section
 		<div.block>
 			css h:74px bdb:#002A65 bgc:#000D1B zi:1
 			<Image file=files.questfall>
-			<div> "version 0.0.7"
+			<div> "version 0.0.8"
 				css fw:500 fs:12px c:gray6 t:24px pos:absolute r:20px
 		<div>
 			css pos:absolute h:100% w:100% zi:-1
 				bg:radial-gradient(circle at 50% 0%, #003069 0%, #000D1B 50%) bgs:1400px 1000px bgr:no-repeat bgp:center top
 		<div.vcontent>
 			<.socials>
-				<div.link>
+				<div.link @click=window.open('https://x.com/QuestfallHQ', '_blank')>
 					<Image file=files.twitter>
 					<span> "Twitter"
-				<div.link>
+				<div.link @click=window.open('https://discord.gg/72snKQ66fD', '_blank')>
 					<Image file=files.discord>
 					<span> "Discord"
-				<div.link>
+				<div.link @click=window.open('https://docs.questfall.xyz', '_blank')>
 					<Image file=files.whitepaper>
 					<span> "Whitepaper"
 			<.header>

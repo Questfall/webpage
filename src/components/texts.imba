@@ -7,48 +7,47 @@ export tag TextSlider
 		count = 0 if count == strings.length
 		const lines = strings[count].split(' ')
 		$line1.innerText = lines[0]
+		# $line1.innerText = strings[count]
 		$line2.innerText = lines[1]
-		# $text.innerText = strings[count]
-		$text.flags.add('show')
+		self.flags.add('show')
 		await timeout(1000)
-		$text.flags.remove('show')
+		self.flags.remove('show')
 		await timeout(1000)
-		$text.flags.add('hide')
+		self.flags.add('hide')
 		await timeout(1000)
-		$text.flags.remove('hide')
+		self.flags.remove('hide')
 		slide(++count)
 	
 	def mount
 		slide!
 
-	css	.show animation: show 1s ease forwards
-	css	.hide animation: hide 1s ease forwards
+	css	&.show animation: show 1s ease forwards
+	css	&.hide animation: hide 1s ease forwards
 	css
 		@keyframes 
 			show
 				0%
-					transform: translateY(-50px)
+					transform: translateY(-50px) transform: translateZ(0)
 					opacity: 0
 					clip-path: polygon(100% 0, 100% 0, 0 220%, 0 220%)
 				100%
-					transform: translateY(0)
+					transform: translateY(0) transform: translateZ(0)
 					opacity: 1
-					clip-path: polygon(100% 0, 100% 220%, 0 220%, 0 0)
+					clip-path: polygon(100% 0, 100% 220%, 0 220%, 0 -20%)
 			hide
 				0%
-					transform: translateY(0)
+					transform: translateY(0) transform: translateZ(0)
 					opacity: 1
 					clip-path: polygon(100% 0, 100% 220%, 0 220%, 0 0)
 				100%
-					transform: translateY(50px)
+					transform: translateY(50px) transform: translateZ(0)
 					opacity: 0
 					clip-path: polygon(100% 0, 100% 0, 0 220%, 0 220%)
 				
 	<self>
-		<div$text>
-			css lh:0.8em
-			<p$line1>
-				css float:left
-			<br>
-			<p$line2>
-				css float:right
+		css lh:0.8em pos:relative
+		<p$line1>
+			css float:left
+		<br>
+		<p$line2>
+			css float:right

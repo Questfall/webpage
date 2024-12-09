@@ -41,7 +41,7 @@ html:not(._0) {--base: 14px;
 min-width: 300px;
 max-width: 1500px;
 position: relative;
-container-type: inline-size;}`);function Dp(t,e){return Object.defineProperties(t,Object.getOwnPropertyDescriptors(e.prototype)),t}var Hp=Symbol.for("#beforeReconcile"),Kp=Symbol.for("#afterReconcile"),Dl=Symbol(),Hl=Symbol(),Kl=Symbol(),Vl=Symbol(),ql=Symbol(),Vp=Symbol();class Tt extends kr("img","HTMLImageElement",D){static create$(){return Dp(globalThis.document.createElement("img"),this)}[M](t=null,e=!0,r=!0){e&&super[M]&&super[M](...arguments),this.file=t?t.file:void 0}render(){var t,e,r,s;return t=this,t[Hp](),(e=r=1,t[Dl]===1)||(e=r=0,t[Dl]=1),s=this.file.path,s===t[Hl]||(t.src=t[Hl]=s),e||(t.loading="lazy"),e||(t.decoding="asynchronous"),s=""+this.file.w,s===t[Kl]||(t.width=t[Kl]=s),s=""+this.file.h,s===t[Vl]||(t.height=t[Vl]=s),s=this.file.alt,s===t[ql]||(t.alt=t[ql]=s),t[Kp](r),t}static{j(this,Vp,"Image",2),U("image-meqyv6-ag",this,{extends:"img",name:"Image"})}}H.register("meqyv6","image-meqyv6-ag { display:block; }");var qp=Symbol.for("#beforeReconcile"),Up=Symbol.for("#afterVisit"),Bp=Symbol.for("#appendChild"),Gp=Symbol.for("#placeChild"),Wp=Symbol.for("#afterReconcile"),Ul=Symbol(),Bl=Symbol(),Gl=Symbol(),Wl=Symbol(),Yp={questfall:{path:"images/questfall.svg",w:162,h:42,alt:"Questfall"}},Qp=Symbol();class tn extends D{render(){var t,e,r,s=this._ns_||"",n,i,o,l,h;return t=this,t[qp](),(e=r=1,t[Ul]===1)||(e=r=0,t[Ul]=1),(!e||r&2)&&t.flagSelf$("z19ityl5-af"),(i=o=1,n=t[Bl])||(i=o=0,t[Bl]=n=x(Tt,t,`z19ityl5-ag ${s}`,null)),l=Yp.questfall,l===t[Gl]||(n.file=t[Gl]=l),i||!n.setup||n.setup(o),n[Up](o),i||t[Bp](n),(h=t[Wl])||(t[Wl]=h=F("div",t,`z19ityl5-ah ${s}`,null)),e||h[Gp]("version 0.0.9"),t[Wp](r),t}static{j(this,Qp,"Header",2),U("header-z19ityl5-ai",this,{name:"Header"})}}H.register("z19ityl5",`.z19ityl5-af:not(#_):not(#_) {display: flex;
+container-type: inline-size;}`);function Dp(t,e){return Object.defineProperties(t,Object.getOwnPropertyDescriptors(e.prototype)),t}var Hp=Symbol.for("#beforeReconcile"),Kp=Symbol.for("#afterReconcile"),Dl=Symbol(),Hl=Symbol(),Kl=Symbol(),Vl=Symbol(),ql=Symbol(),Vp=Symbol();class Tt extends kr("img","HTMLImageElement",D){static create$(){return Dp(globalThis.document.createElement("img"),this)}[M](t=null,e=!0,r=!0){e&&super[M]&&super[M](...arguments),this.file=t?t.file:void 0}render(){var t,e,r,s;return t=this,t[Hp](),(e=r=1,t[Dl]===1)||(e=r=0,t[Dl]=1),s=this.file.path,s===t[Hl]||(t.src=t[Hl]=s),e||(t.loading="lazy"),e||(t.decoding="asynchronous"),s=""+this.file.w,s===t[Kl]||(t.width=t[Kl]=s),s=""+this.file.h,s===t[Vl]||(t.height=t[Vl]=s),s=this.file.alt,s===t[ql]||(t.alt=t[ql]=s),t[Kp](r),t}static{j(this,Vp,"Image",2),U("image-meqyv6-ag",this,{extends:"img",name:"Image"})}}H.register("meqyv6","image-meqyv6-ag { display:block; }");var qp=Symbol.for("#beforeReconcile"),Up=Symbol.for("#afterVisit"),Bp=Symbol.for("#appendChild"),Gp=Symbol.for("#placeChild"),Wp=Symbol.for("#afterReconcile"),Ul=Symbol(),Bl=Symbol(),Gl=Symbol(),Wl=Symbol(),Yp={questfall:{path:"images/questfall.svg",w:162,h:42,alt:"Questfall"}},Qp=Symbol();class tn extends D{render(){var t,e,r,s=this._ns_||"",n,i,o,l,h;return t=this,t[qp](),(e=r=1,t[Ul]===1)||(e=r=0,t[Ul]=1),(!e||r&2)&&t.flagSelf$("z19ityl5-af"),(i=o=1,n=t[Bl])||(i=o=0,t[Bl]=n=x(Tt,t,`z19ityl5-ag ${s}`,null)),l=Yp.questfall,l===t[Gl]||(n.file=t[Gl]=l),i||!n.setup||n.setup(o),n[Up](o),i||t[Bp](n),(h=t[Wl])||(t[Wl]=h=F("div",t,`z19ityl5-ah ${s}`,null)),e||h[Gp]("version 0.1.0"),t[Wp](r),t}static{j(this,Qp,"Header",2),U("header-z19ityl5-ai",this,{name:"Header"})}}H.register("z19ityl5",`.z19ityl5-af:not(#_):not(#_) {display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;}
@@ -263,7 +263,7 @@ display: flex;
 flex-direction: column;
 align-items: center;}
 
-.z1ku6li0-ag:not(#_):not(#_) {height: 6vh;
+.z1ku6li0-ag:not(#_):not(#_) {height: 8vh;
 background-color: #000D1B;
 z-index: 1;
 position: absolute;
@@ -272,6 +272,6 @@ left: 0rem;
 right: 0rem;}
 
 .z1ku6li0-ah:not(#_):not(#_) {height: 100vh;
-padding-top: 6vh;}
+padding-top: 8vh;}
 
 app-z1ku6li0-ak { display:block; }`);

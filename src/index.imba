@@ -16,9 +16,9 @@ tag App < article
 	<self>
 		css pos:relative d:vflex ai:center
 		<Header>
-			css h:6vh bgc:#000D1B zi:1 pos:absolute t:0 l:0 r:0
+			css h:8vh bgc:#000D1B zi:1 pos:absolute t:0 l:0 r:0
 		<Hero.block>
-			css h:100vh pt:6vh
+			css h:100vh pt:8vh
 		<Screen.block>
 		<Crypto.block>
 		# <Header>

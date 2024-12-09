@@ -47,7 +47,8 @@ export tag TextSlider
 	<self>
 		css lh:0.8em pos:relative
 		<p$line1>
-			css float:left
+			css l:0 pos:absolute # float:left
 		<br>
 		<p$line2>
-			css float:right
+			css r:0 pos:absolute
+			# css float:right

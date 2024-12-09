@@ -35,3 +35,38 @@ global css
 	# 	d:vflex jc:center ai:center w:100%
 	.block
 		w:100% >300px <1500px pos:relative container-type:inline-size
+
+window.onload = do 
+	const lax = require('lax.js')
+	lax.init!
+	lax.addDriver('scrollY', do return window.scrollY)
+	lax.addElements '.lax20',
+			scrollY:
+				translateY: [
+					["elInY", "elCenterY", "elOutY"]
+					['screenHeight/20', 0, '-screenHeight/20']
+				]
+	lax.addElements '.lax16',
+			scrollY:
+				translateY: [
+					["elInY", "elCenterY", "elOutY"]
+					['screenHeight/16', 0, '-screenHeight/16']
+				]
+	lax.addElements '.lax12',
+			scrollY:
+				translateY: [
+					["elInY", "elCenterY", "elOutY"]
+					['screenHeight/12', 0, '-screenHeight/12']
+				]
+	lax.addElements '.lax8',
+			scrollY:
+				translateY: [
+					["elInY", "elCenterY", "elOutY"]
+					['screenHeight/8', 0, '-screenHeight/8']
+				]
+	lax.addElements '.lax4',
+			scrollY:
+				translateY: [
+					["elInY", "elCenterY", "elOutY"]
+					['screenHeight/4', 0, '-screenHeight/4']
+				]

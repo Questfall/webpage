@@ -51,7 +51,7 @@ export tag Hero
 				css fs:$h5 ta:center ls:0.2em
 				<span> "Quests Reimagined"
 			<TextSlider strings=headers>
-				css fs:$h1 ta:center mb:1.5em mt:0.4em w:clamp(300px, 80%, 400px) mx:auto
+				css fs:$h1 ta:center mb:1.2em mt:0.4em mx:auto w:clamp(300px, 80%, 450px)
 			<div>
 				css bgc:#84084F fw:600 fs:$h5 h:1.7em lh:1.7em bd:transparent d:hflex jc:center ai:center rd:0.4em ta:center mx:auto px:1.4em w:fit-content # aspect-ratio:6 lh:1.8em py:auto 
 				<span> "Coming soon"

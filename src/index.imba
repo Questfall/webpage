@@ -7,13 +7,18 @@ import './global.imba'
 
 # import {Footer} from './blocks/footer.imba'
 
+import {Header} from './blocks/00.header.imba'
 import {Hero} from './blocks/01.hero.imba'
 import {Screen} from './blocks/02.screen.imba'
 import {Crypto} from './blocks/03.crypto.imba'
 
 tag App < article
-	<self.app>
+	<self>
+		css pos:relative d:vflex ai:center
+		<Header>
+			css h:6vh bgc:#000D1B zi:1 pos:absolute t:0 l:0 r:0
 		<Hero.block>
+			css h:100vh pt:6vh
 		<Screen.block>
 		<Crypto.block>
 		# <Header>

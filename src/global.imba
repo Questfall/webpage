@@ -7,7 +7,14 @@
 
 global css
 	@root
-		$scroll: 0
+		$base: 16px
+		$scale: 1.5
+		$h6: $base
+		$h5: ($h6 * $scale)
+		$h4: ($h5 * $scale)
+		$h3: ($h4 * $scale)
+		$h2: ($h3 * $scale)
+		$h1: ($h2 * $scale)
 	html
 		overflow-x:hidden
 		ff:"Gilroy", sans-serif
@@ -15,11 +22,16 @@ global css
 		c:white
 		bgc:#000D1B
 		scroll-behavior: smooth
+		overscroll-behavior: none
+		@lt-xl $base:15px $scale:1.46
+		@lt-md $base:15px $scale:1.44
+		@lt-sm $base:14px $scale:1.42
+		@lt-xs $base:14px $scale:1.4
 	# body
 	# 	d:vflex jc:center ai:center
 	# .app
 	# 	d:vflex w:100% ta:center
+	# .block
+	# 	d:vflex jc:center ai:center w:100%
 	.block
-		d:vflex jc:center ai:center w:100%
-	.vcontent
-		w:100% <1500px d:vflex jc:center ai:center gap:0 h:100% pos:relative
+		w:100% >300px <1500px pos:relative container-type:inline-size

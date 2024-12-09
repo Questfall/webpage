@@ -2,11 +2,6 @@ import {Image} from '../components/media.imba'
 import {TextSlider} from '../components/texts.imba'
 
 const files = 
-	questfall: 
-		path: 'images/questfall.svg'
-		w: 162
-		h: 42
-		alt: 'Questfall'
 	twitter: 
 		path: 'images/twitter.svg'
 		w: 15
@@ -23,52 +18,43 @@ const files =
 		h: 15
 		alt: 'Whitepaper'
 
-const headers = ['Tokenomics', 'Bot Protection', 'Mining', 'Deflation', 'Fun', 'Decentralization']
+const headers = ['Mining', 'Rules', 'No Bots', 'Deflation', 'Fun']
 
-export tag Hero < section
+export tag Hero
 	css
-		.socials
-			d:hflex ai:center max-width:900px gap:80px jc:space-between t:80px pos:absolute
-			.link 
-				c:#30A5FF d:hflex ai:center fw:500 fs:1rem cursor:pointer
-				img	
-					mr:0.3em
-		.header
-			my:auto of:visible min-width:560px
+		.link 
+			cursor:pointer d:hflex ai:center jc:center h:(1.5 * $base) lh:(1.5 * $base)
+			img
+				bd:transparent h:100% mr:0.4em
+			span
+				bd:transparent h:100%
 	<self>
-		css h:100vh pos:relative
-		<div.block>
-			css h:74px bdb:#002A65 bgc:#000D1B zi:1
-			<Image file=files.questfall>
-			<div> "version 0.0.8"
-				css fw:500 fs:12px c:gray6 t:24px pos:absolute r:20px
 		<div>
 			css pos:absolute h:100% w:100% zi:-1
 				bg:radial-gradient(circle at 50% 0%, #003069 0%, #000D1B 50%) bgs:1400px 1000px bgr:no-repeat bgp:center top
-		<div.vcontent>
-			<.socials>
-				<div.link @click=window.open('https://x.com/QuestfallHQ', '_blank')>
-					<Image file=files.twitter>
-					<span> "Twitter"
-				<div.link @click=window.open('https://discord.gg/72snKQ66fD', '_blank')>
-					<Image file=files.discord>
-					<span> "Discord"
-				<div.link @click=window.open('https://docs.questfall.xyz', '_blank')>
-					<Image file=files.whitepaper>
-					<span> "Whitepaper"
-			<.header>
-				# <div>
-				# 	css fs:1.5rem ta:center
-				# 	<span> "Quest Platform"
-				<div>
-					css fs:1.5rem ta:center mb:1em ls:0.2em
-					<span> "Quests Reimagined"
-				<TextSlider strings=headers>
-					css fs:6rem lh:1em ta:center
-				<div>
-					css bgc:#84084F fw:600 rd:7px ta:center w:fit-content px:1em py:0.2em fs:18px mx:auto mt:3em
-					<span> "Coming soon"
-				# <span> 'of the future'
-				# 	css float:right fs:1.5rem mt:-1.5rem
-
+		<div>
+			css d:hflex ai:center jc:space-around mt:12cqh mx:auto
+				w:clamp(300px,80cqw,500px) gap:clamp(10px, 10cqw, 100px)
+				c:#30A5FF fw:500 fs:$base
+			<div.link @click=window.open('https://x.com/QuestfallHQ', '_blank')>
+				<Image file=files.twitter>
+				<span> "Twitter"
+			<div.link @click=window.open('https://discord.gg/72snKQ66fD', '_blank')>
+				<Image file=files.discord>
+				<span> "Discord"
+			<div.link @click=window.open('https://docs.questfall.xyz', '_blank')>
+				<Image file=files.whitepaper>
+				<span> "Whitepaper"
+		<div>
+			css of:visible mt:12cqh # min-width:560px
+			<div>
+				css fs:$h5 ta:center ls:0.2em
+				<span> "Quests Reimagined"
+			<TextSlider strings=headers>
+				css fs:$h1 ta:center mb:0.5em mt:0.4em
+			<div>
+				css bgc:#84084F fw:600 fs:$h5 bd:transparent h:1.6em d:hflex jc:center ai:center rd:0.4em ta:center mx:auto px:1.4em w:fit-content # aspect-ratio:6 lh:1.8em py:auto 
+				<span> "Coming soon"
+					css h:100% lh:1.6em
+	
 			

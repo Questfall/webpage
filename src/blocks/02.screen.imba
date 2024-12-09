@@ -69,11 +69,11 @@ tag Part
 		&.show
 			animation: show 1s forwards
 			@keyframes show
-				0% o:0 transform: translateX(100vh) translateY(-200vw)
-				100% o:1 transform: translateX(0) translateY(0)
+				0% o:0 # transform: translateX(100vh) translateY(-200vw)
+				100% o:1 # transform: translateX(0) translateY(0)
 	<self>
 		css pos:absolute will-change:transform # l:0 t:0 w:100% h:100%
-			o:0 transform: translateX(100vh) translateY(-200vw) 
+			o:0 # transform: translateX(100vh) translateY(-200vw) 
 			
 		<Image file=file>
 			css w:100% h:auto
@@ -93,15 +93,15 @@ export tag Screen
 		# console.log "y:{e.offsetY}, x:{e.offsetX}"
 
 
-	css
-		.perspective
-			transform: perspective(2000px) rotateY(15deg) rotateZ(-15deg) rotateX(55deg) scale(0.7)
-		.basic
-			animation: basic 1s forwards
-			@keyframes basic
-				0% transform: perspective(2000px) rotateY(15deg) rotateZ(-15deg) rotateX(55deg) scale(0.7)
-				99.99% transform: perspective(2000px) rotateY(0deg) rotateZ(0deg) rotateX(0deg) scale(1)
-				100% transform: perspective(0)
+	# css
+	# 	.perspective
+	# 		transform: perspective(2000px) rotateY(15deg) rotateZ(-15deg) rotateX(55deg) scale(0.7)
+	# 	.basic
+	# 		animation: basic 1s forwards
+	# 		@keyframes basic
+	# 			0% transform: perspective(2000px) rotateY(15deg) rotateZ(-15deg) rotateX(55deg) scale(0.7)
+	# 			99.99% transform: perspective(2000px) rotateY(0deg) rotateZ(0deg) rotateX(0deg) scale(1)
+	# 			100% transform: perspective(0)
 	
 	<self [transform-style:preserve-3d]=!finished>
 		css aspect-ratio:{1400 / 1065} will-change:transform px:5% # ofx:hidden

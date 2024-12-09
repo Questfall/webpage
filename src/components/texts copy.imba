@@ -5,17 +5,14 @@ export tag TextSlider
 	
 	def slide count = 0
 		count = 0 if count == strings.length
-		const lines = strings[count].split(' ')
-		$line1.innerText = lines[0]
-		$line2.innerText = lines[1]
-		# $text.innerText = strings[count]
-		$text.flags.add('show')
+		$header.innerText = strings[count]
+		$header.flags.add('show')
 		await timeout(1000)
-		$text.flags.remove('show')
+		$header.flags.remove('show')
 		await timeout(1000)
-		$text.flags.add('hide')
+		$header.flags.add('hide')
 		await timeout(1000)
-		$text.flags.remove('hide')
+		$header.flags.remove('hide')
 		slide(++count)
 	
 	def mount
@@ -29,26 +26,24 @@ export tag TextSlider
 				0%
 					transform: translateY(-50px)
 					opacity: 0
-					clip-path: polygon(100% 0, 100% 0, 0 220%, 0 220%)
+					clip-path: polygon(100% 0, 100% 0, 0 110%, 0 110%)
 				100%
 					transform: translateY(0)
 					opacity: 1
-					clip-path: polygon(100% 0, 100% 220%, 0 220%, 0 0)
+					clip-path: polygon(100% 0, 100% 110%, 0 110%, 0 0)
 			hide
 				0%
 					transform: translateY(0)
 					opacity: 1
-					clip-path: polygon(100% 0, 100% 220%, 0 220%, 0 0)
+					clip-path: polygon(100% 0, 100% 110%, 0 110%, 0 0)
 				100%
 					transform: translateY(50px)
 					opacity: 0
-					clip-path: polygon(100% 0, 100% 0, 0 220%, 0 220%)
+					clip-path: polygon(100% 0, 100% 0, 0 110%, 0 110%)
 				
 	<self>
-		<div$text>
-			css lh:0.8em
-			<p$line1>
-				css float:left
-			<br>
-			<p$line2>
-				css float:right
+		<p$header>
+		#	css o: 0
+	# 	# clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%)
+	# 	# transform: translateY(-50px)
+	# 	# opacity: 0

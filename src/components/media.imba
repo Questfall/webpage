@@ -1,3 +1,3 @@
 export tag Image < img
 	file
-	<self src=file.path loading="lazy" decoding="asynchronous" width="{file.w}" height="{file.h}" alt=file.alt>
+	<self [aspect-ratio: {file.w / file.h}] src=file.path loading="lazy" decoding="asynchronous" alt=file.alt>

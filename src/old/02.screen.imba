@@ -105,7 +105,7 @@ export tag Screen
 	
 	<self [transform-style:preserve-3d]=!finished>
 		css aspect-ratio:{1400 / 1065} will-change:transform px:5% # ofx:hidden
-		<div$container .perspective @mousemove=hover>
+		<div$container.lax8 .perspective @mousemove=hover>
 			css will-change:transform pos:relative w:100% h:100%
 			<Part name='background' progress=20>
 				css t:0 w:100% # l:0

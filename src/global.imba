@@ -8,8 +8,8 @@
 global css
 	@root
 		$base: 16px
-		$scale: 1.5
-		$h6: $base
+		$scale: 1.4
+		$h6: ($base * $scale)
 		$h5: ($h6 * $scale)
 		$h4: ($h5 * $scale)
 		$h3: ($h4 * $scale)
@@ -20,21 +20,27 @@ global css
 		ff:"Gilroy", sans-serif
 		fw: 600
 		c:white
+		fs: $base
 		bgc:#000D1B
 		scroll-behavior: smooth
 		overscroll-behavior: none
-		@lt-xl $base:15px $scale:1.46
-		@lt-md $base:15px $scale:1.44
-		@lt-sm $base:14px $scale:1.42
-		@lt-xs $base:14px $scale:1.4
+		@lt-xl $base:15px $scale:1.375
+		@lt-md $base:15px $scale:1.35
+		@lt-sm $base:14px $scale:1.325
+		@lt-xs $base:14px $scale:1.3
 	# body
 	# 	d:vflex jc:center ai:center
 	# .app
 	# 	d:vflex w:100% ta:center
 	# .block
 	# 	d:vflex jc:center ai:center w:100%
-	.block
-		w:100% >300px <1500px pos:relative container-type:inline-size
+	.h1 fs:$h1
+	.h2 fs:$h2
+	.h3 fs:$h3
+	.h4 fs:$h4
+	.h5 fs:$h5
+	.h6 fs:$h6
+	.txt fs:$base
 
 window.onload = do 
 	const lax = require('lax.js')

@@ -3,22 +3,27 @@ import {TextSlider} from '../components/texts.imba'
 
 const files = 
 	twitter: 
-		path: 'images/twitter.svg'
+		path: 'images/01hero/twitter.svg'
 		w: 15
 		h: 16
 		alt: 'Twitter'
 	discord: 
-		path: 'images/discord.svg'
+		path: 'images/01hero/discord.svg'
 		w: 22
 		h: 18
 		alt: 'Discord'
 	whitepaper: 
-		path: 'images/whitepaper.svg'
+		path: 'images/01hero/whitepaper.svg'
 		w: 15
 		h: 15
 		alt: 'Whitepaper'
+	screenshot:
+		path: 'images/01hero/screenshot.avif'
+		w: 1280
+		h: 973
+		alt: 'Questfall screenshot'
 
-const headers = ['True Mining', 'Honest Rules', 'Anti Cheat', 'Lasting Growth', 'Endless Thrill']
+const headers = ['Fair Mining', 'Fixed Rules', 'Anti Cheat', 'Endless Growth', 'Intense Thrill']
 
 export tag Hero
 	css
@@ -29,9 +34,6 @@ export tag Hero
 			span
 				bd:transparent h:100%
 	<self>
-		<div>
-			css pos:absolute h:100% w:100% zi:-1
-				bg:radial-gradient(circle at 50% 0%, #003069 0%, #000D1B 50%) bgs:1400px 1000px bgr:no-repeat bgp:center top
 		<div>
 			css d:hflex ai:center jc:space-around mt:12cqh mx:auto
 				w:clamp(300px,80cqw,500px) gap:clamp(10px, 10cqw, 100px)
@@ -46,15 +48,18 @@ export tag Hero
 				<Image file=files.whitepaper>
 				<span> "Whitepaper"
 		<div>
-			css of:visible mt:12cqh # min-width:560px
-			<div>
-				css fs:$h5 ta:center ls:0.2em
-				<span> "Quests Reimagined"
-			<TextSlider strings=headers>
-				css fs:$h1 ta:center mb:1.2em mt:0.4em mx:auto w:clamp(300px, 80%, 450px)
-			<div>
-				css bgc:#84084F fw:600 fs:$h5 h:1.7em lh:1.7em bd:transparent d:hflex jc:center ai:center rd:0.4em ta:center mx:auto px:1.4em w:fit-content # aspect-ratio:6 lh:1.8em py:auto 
-				<span> "Coming soon"
-					css h:100% lh:1.6em
-	
-			
+			css of:visible mt:12cqh # pos:sticky t:0 # min-width:560px
+			<div.h6> "New Era of Quests"
+				css ta:center ls:0.2em mx:10%
+				# <span> "Quests Reimagined"
+				# <span> "New Era for Quests"
+			<TextSlider.h1 strings=headers>
+				css lh:1em ta:center mt:0.2em mx:auto w:clamp(300px, 80%, 450px) # d:block
+			# <div>
+			# 	css bgc:#84084F fw:600 fs:$h5 h:1.7em lh:1.7em bd:transparent d:hflex jc:center ai:center rd:0.4em ta:center mx:auto px:1.4em w:fit-content # aspect-ratio:6 lh:1.8em py:auto 
+			# 	<span> "Coming soon"
+			# 		css h:100% lh:1.6em
+			<Image file=files.screenshot>
+				css w:100% mt:8rem
+
+		

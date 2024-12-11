@@ -1,0 +1,2 @@
+export tag Tokenomics
+	<self>

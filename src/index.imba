@@ -15,7 +15,7 @@ import {Tokenomics} from './blocks/03.tokenomics.imba'
 
 css
 	.block
-		w:80% >300px <1500px pos:relative container-type:inline-size mx:10%
+		w:90% >300px <1500px pos:relative container-type:inline-size mx:10%
 
 tag App
 	<self>
@@ -24,7 +24,7 @@ tag App
 			css h:6vh zi:1 pos:absolute t:0 l:0 r:0 bgc:#000D1B
 		<div>
 			css pos:absolute h:100% w:100% mt:6vh zi:-1
-				bg:radial-gradient(circle at 50% 0%, #003069 0%, #000D1B 50%) bgs:1400px 1000px bgr:no-repeat bgp:center top
+				bg:radial-gradient(circle at 50% 0%, #003069 0%, #010A14 50%) bgs:1400px 1000px bgr:no-repeat bgp:center top
 		<Hero.block>
 			css pt:6vh
 		# <Screen.block>

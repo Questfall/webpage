@@ -21,7 +21,7 @@ global css
 		fw: 600
 		c:white
 		fs: $base
-		bgc:#000D1B
+		bgc:#010A14
 		scroll-behavior: smooth
 		overscroll-behavior: none
 		@lt-xl $base:15px $scale:1.375

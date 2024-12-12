@@ -23,7 +23,7 @@ const files =
 		h: 973
 		alt: 'Questfall screenshot'
 
-const headers = ['Fair Mining', 'Fixed Rules', 'Anti Cheat', 'Endless Growth', 'Intense Thrill']
+const headers = ['Fair Mining', 'Bot Defence', 'Token Burning', 'RPG System']
 
 export tag Hero
 	css
@@ -36,7 +36,7 @@ export tag Hero
 	<self>
 		<div>
 			css d:hflex ai:center jc:space-around mt:12cqh mx:auto
-				w:clamp(300px,80cqw,500px) gap:clamp(10px, 10cqw, 100px)
+				w:clamp(300px,100%,500px) gap:clamp(10px, 10cqw, 100px)
 				c:#30A5FF fw:500 fs:$base
 			<div.link @click=window.open('https://x.com/QuestfallHQ', '_blank')>
 				<Image file=files.twitter>
@@ -49,12 +49,12 @@ export tag Hero
 				<span> "Whitepaper"
 		<div>
 			css of:visible mt:12cqh # pos:sticky t:0 # min-width:560px
-			<div.h6> "New Era of Quests"
-				css ta:center ls:0.2em mx:10%
+			<div.h5> "New Era of Quests"
+				css ta:center mx:10% ls:0.05em
 				# <span> "Quests Reimagined"
 				# <span> "New Era for Quests"
-			<TextSlider.h1 strings=headers>
-				css lh:1em ta:center mt:0.2em mx:auto w:clamp(300px, 80%, 450px) # d:block
+			<TextSlider.h2 strings=headers>
+				css lh:1em ta:center mt:0.2em mx:auto w:100% # w:clamp(300px, 100%, 550px) # d:block
 			# <div>
 			# 	css bgc:#84084F fw:600 fs:$h5 h:1.7em lh:1.7em bd:transparent d:hflex jc:center ai:center rd:0.4em ta:center mx:auto px:1.4em w:fit-content # aspect-ratio:6 lh:1.8em py:auto 
 			# 	<span> "Coming soon"

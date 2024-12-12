@@ -12,5 +12,5 @@ export tag Header
 		css d:hflex ai:center jc:center
 		<Image file=files.questfall>
 			css h:70%
-		<div> "version 0.1.6"
+		<div> "version 0.1.7"
 			css fw:500 fs:12px c:gray6 r:20px my:auto pos:absolute

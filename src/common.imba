@@ -22,7 +22,7 @@ export class Scrolling
 		window.addEventListener "scroll", scroll.bind(self), {signal: controller.signal}
 
 	def milestone event
-		return if event.progress is undefined or (event.show !isa Function and event.hide !isa Function)
+		return if !event or (event.progress is undefined) or (event.show !isa Function and event.hide !isa Function)
 		event.visible = false
 		events.push event
 	

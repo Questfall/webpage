@@ -9,8 +9,8 @@ const files =
 
 export tag Header
 	<self>
-		css d:hflex ai:center jc:center
+		css h:78px d:hflex ai:center jc:center scale:$ratio
 		<Image file=files.questfall>
-			css h:70%
-		<div> "version 0.1.7"
+			css h:41px
+		<div> "version 0.1.9"
 			css fw:500 fs:12px c:gray6 r:20px my:auto pos:absolute
